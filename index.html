@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml"></html>
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Admin dashboard</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="container">
+      <aside>
+           <div class="top">
+            <div class="logo">
+                  <i class="fa-solid fa-magnet"></i>
+                  <h1>yushda</h1>
+            </div>
+            <div class="close">
+                  <i class="fa-solid fa-x"></i>
+            </div>
+           </div>
+           <div class="sidebar">
+            <a href="#" >
+                  <span><i class="fa-sharp fa-solid fa-table-columns"></i></span>
+                  <h3>dashboard</h3>
+            </a>
+            <a href="#">
+                  <span><i class="fa-sharp fa-solid fa-table-columns"></i></span>
+                  <h3>customers</h3>
+            </a>
+            <a href="#">
+                  <span><i class="fa-sharp fa-solid fa-table-columns"></i></span>
+                  <h3>orders</h3>
+            </a>
+            <a href="#" >
+                  <span><i class="fa-sharp fa-solid fa-table-columns"></i></span>
+                  <h3>messeges</h3>
+                  <span class="messege-count">24</span>
+            </a>
+            <a href="#">
+                  <span><i class="fa-solid fa-shop"></i></span>
+                  <h3>products</h3>
+            </a>
+            <a href="#">
+                  <span><i class="fa-regular fa-flag"></i></span>
+                  <h3>reports</h3>
+            </a>
+            <a href="#">
+                  <span><i class="fa-solid fa-person"></i></span>
+                  <h3>forums</h3>
+            </a>
+            <a href="#">
+                  <span><i class="fa-solid fa-gear"></i></span>
+                  <h3>settings</h3>
+            </a>
+            <a href="#">
+                  <span><i class="fa-solid fa-power-off"></i></span>
+                  <h3>logout</h3>
+            </a>
+           </div>
+      </aside>
+      <!----------------end of aside------------- -->
+      <main>
+            <h1>dashboard</h1>
+             <div class="date">
+                  <input type="date">
+             </div>
+             <div class="insights">
+
+                  <div class="sales">
+                        <span><i class="fa-solid fa-chart-simple"></i></span>
+                        <div class="middle">
+                              <div class="left">
+                                    <h3>total sale</h3>
+                                    <h1>$25,544</h1>
+                              </div>
+                              <div class="progress">
+                                    <svg>
+                                          <circle cx="38" cy="38" r="36"></circle>
+                                    </svg>
+                                    <div class="number">
+                                          <p>81%</p>
+                                    </div>
+                              </div>
+                        </div>
+                        <small class="text-muted">last 24 hours</small>
+                  </div>
+                  <!-- end of sales -->
+                  
+                  <div class="expences">
+                        <span><i class="fa-solid fa-chart-simple"></i></span>
+                        <div class="middle">
+                              <div class="left">
+                                    <h3>total expences</h3>
+                                    <h1>$25,544</h1>
+                              </div>
+                              <div class="progress">
+                                    <svg>
+                                          <circle cx="38" cy="38" r="32"></circle>
+                                    </svg>
+                                    <div class="number">
+                                          <p>44%</p>
+                                    </div>
+                              </div>
+                        </div>
+                        <small class="text-muted">last 24 hours</small>
+                  </div>
+                  <!-- end of sales -->
+                  <div class="income">
+                        <span><i class="fa-solid fa-chart-simple"></i></span>
+                        <div class="middle">
+                              <div class="left">
+                                    <h3>total income</h3>
+                                    <h1>$14,674</h1>
+                              </div>
+                              <div class="progress">
+                                    <svg>
+                                          <circle cx="38" cy="38" r="36"></circle>
+                                    </svg>
+                                    <div class="number">
+                                          <p>70%</p>
+                                    </div>
+                              </div>
+                        </div>
+                        <small class="text-muted">last 24 hours</small>
+                  </div>
+                  <!-- end of sales -->
+                  
+
+             </div>
+             <!-- ----------end of insights-------- -->
+             <div class="recent-orders">
+                  <h1>recent orders</h1>
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>product name</th>
+                                    <th>product number</th>
+                                    <th>payments</th>
+                                    <th>status</th>
+                                    <th></th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <!-- <tr>
+                                    <td> foldable mini drone</td>
+                                    <td>85631</td>
+                                    <td>due</td>
+                                    <td class="warning">pending</td>
+                                    <td class="primary">details</td>
+                              </tr> -->
+                              
+                        </tbody>
+                  </table>
+                  <a href="" class="show-all">show all</a>
+             </div>
+      </main>
+      <!-- -----------end of main-------- -->
+      <div class="right">
+            <div class="top">
+                  <button id="menu-btn">
+                        <span><i class="fa-solid fa-bars"></i></span>
+                  </button>
+                  <div class="theme-toggler">
+                        <span><i class="fa-solid fa-sun" ></i></span>
+                        <span><i class="fa-solid fa-moon "></i></span>
+                  </div>
+                  <div class="profile">
+                        <div class="info">
+                              <p>hey, <b>mohan</b></p>
+                              <small class="text-muted">admin</small>
+                        </div>
+                        <div class="profile-photo">
+                              <img src="images/man-with-beard-avatar-character.png" alt="">
+                        </div>
+                  </div>
+            </div>
+            <div class="recent-apdates">
+                  <h2>recent updates</h2>
+                  <div class="updates">
+                        <div class="update">
+                              <div class="profile-photo">
+                                  <img src="images/png-transparent-female-avatar-gi.png" alt="">
+                              </div>
+                              <div class="messege">
+                                    <p><b>mike tyson</b> recieved his order of drone</p>
+                                    <small class="text-muted">2 minutes ago</small>
+                              </div>
+                        </div>
+                        <div class="update">
+                              <div class="profile-photo">
+                                    <img src="images/png-clipart-user-profile-compute.png" alt="">
+                              </div>
+                              <div class="messege">
+                                    <p><b>mike tyson</b> recieved his order of drone</p>
+                                    <small class="text-muted">2 minutes ago</small>
+                              </div>
+                        </div>
+                        <div class="update">
+                              <div class="profile-photo">
+                                    <img src="images/png-transparent-female-avatar-gi.png" alt="">
+                              </div>
+                              <div class="messege">
+                                    <p><b>mike tyson</b> recieved his order of drone</p>
+                                    <small class="text-muted">2 minutes ago</small>
+                              </div>
+                        </div>
+                     
+                  </div>
+            </div>
+            <div class="sales-analytics">
+                  <h2>sales analytics</h2>
+                  <div class="item online">
+                       <div class="icon">
+                        <span><i class="fa-solid fa-cart-shopping"></i></span>
+                       </div>
+                       <div class="right">
+                        <div class="info">
+                              <h3>online orders</h3>
+                              <small class="text-muted">last 24 hours</small>
+                        </div>
+                        <h5 class="success">+39%</h5>
+                        <h3>3849</h3>
+                       </div>
+                  </div>
+                  <div class="item offline">
+                       <div class="icon">
+                        <span><i class="fa-solid fa-shop"></i></span>
+                       </div>
+                       <div class="right">
+                        <div class="info">
+                              <h3>offline orders</h3>
+                              <small class="text-muted">last 24 hours</small>
+                        </div>
+                        <h5 class="danger">-18%</h5>
+                        <h3>1100</h3>
+                       </div>
+                  </div>
+                  <div class="item customer">
+                       <div class="icon">
+                        <span><i class="fa-solid fa-user"></i></span>
+                       </div>
+                       <div class="right">
+                        <div class="info">
+                              <h3>New customers</h3>
+                              <small class="text-muted">last 24 hours</small>
+                        </div>
+                        <h5 class="succes">+25%</h5>
+                        <h3>849</h3>
+                       </div>
+                  </div>
+                  <div class="item add-product">
+                        <div>
+                              <span><i class="fa-solid fa-plus"></i></span>
+                              <h3>add product</h3>
+                        </div>
+                  </div>
+                
+            </div>
+      </div>
+
+     </div>
+     <script src="orders.js"></script>
+     <script src="app.js"></script>
+</body>
+</html>
